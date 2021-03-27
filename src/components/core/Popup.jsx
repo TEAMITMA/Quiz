@@ -9,7 +9,7 @@ class Popup extends Component {
         
         this.state = {
             time: 'start',
-            title: 'Welcome to Quiz',
+            title: 'Au revoir',
             text: 'This is a quiz application built by Laclasse. <br /><br />',
             buttonText: 'Start the quiz' 
         };
@@ -66,10 +66,7 @@ class Popup extends Component {
     
     componentWillReceiveProps(nextProps) {
         this.setState({
-            text: 'You have completed the quiz. <br /> You got: <strong>' + this.props.score + 
-            '</strong> out of <strong>' + 
-            this.props.total +
-            '</strong> questions right.'
+            text: "Merci de votre participation. <br /> Veuillez revenir au live pour l'annonce des gagants <br />"
         })
     }
 
@@ -89,11 +86,13 @@ class Popup extends Component {
                                 <h1>{title}</h1>
                                 <p dangerouslySetInnerHTML={this.createMarkup(text)} />
                                 <span onClick={this.popupHandle}>
+                                {/**
                                     <MyButton
                                         text={buttonText}
                                         bck='#FF9800'
                                         color='#fff'
                                     />
+                                    **/}
                                 </span>
                             </div>
                         </div>

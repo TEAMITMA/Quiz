@@ -130,11 +130,11 @@ header .header_logo_title {
 #answers li.right {
     border-color: #f7b731;
     color: #fff;
-    background-color: #f7b731;
+    background-color: #fff;
 }
 
 #answers li.right span {
-    background-color: #f7b731;
+    background-color: #ff;
 }
 
 #answers li.right p {
@@ -144,7 +144,7 @@ header .header_logo_title {
 #answers li.wrong {
     border-color: #dc0a0a;
     color: #dc0a0a;
-    background-color: #dc0a0a;
+    background-color: #fff;
     animation: shake 1.0s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
@@ -152,12 +152,12 @@ header .header_logo_title {
 }
 
 #answers li.wrong span {
-    background-color: #dc0a0a;
+    background-color: #fff;
 }
 
 #answers li.wrong p {
     color: #fff;
-    background-color: #dc0a0a;
+    background-color: #fff;
 }
 
 #submit {
@@ -229,17 +229,18 @@ header .header_logo_title {
 }
 
 .popup h1 {
-    background-color: #FF9800;
+    background-color: #f7b62a;
     color: white;
     border-bottom: 1px solid #ccc;
     padding: 20px;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .popup p {
     font-size: 18px;
     letter-spacing: 1px;
-    margin: 20px 10% 0;
+    margin: 20px 10% 50px;
 }
 
 
