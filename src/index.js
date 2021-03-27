@@ -16,6 +16,7 @@ class App extends React.Component {
             {
                 (name && email)?
                     <Main/>:
+
                     <Form/>
             }
             <Footer/>
