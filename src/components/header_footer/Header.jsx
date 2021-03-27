@@ -5,7 +5,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-
 const styles = {
   root: {
     flexGrow: 1,
@@ -15,10 +14,10 @@ const styles = {
     marginRight: 10,
   },
   color:{
-    backgroundColor: '#3c3c3c',
+    backgroundColor: '#ffff',
   },
   whiteColor:{
-    color:'#fff',
+    color:'#f7b62a',
   }
 };
 
@@ -28,9 +27,7 @@ function DenseAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" className={classes.color}> 
         <Toolbar variant="dense">
-          <Typography variant="h6" className={classes.whiteColor}>
-            Quiz Made By Laclasse
-          </Typography>
+          <img src="https://bucket.mwsapp.com/laclasse/logo.png" width="240" alt="Logo" />;
         </Toolbar>
       </AppBar>
     </div>

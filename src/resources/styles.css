@@ -52,7 +52,7 @@ header .header_logo_title {
 ======================*/
 #question {
     margin-top: 100px;
-    background-color: #F57C00;
+    background-color: #f7b62a;
     color: white;
     padding: 10px;
     text-align: center;
@@ -90,7 +90,7 @@ header .header_logo_title {
 
 #answers li {
     background-color: #fff;
-    border: 2px solid #FF9800;
+    border: 2px solid #f7b62a;
     min-height: 70px;
     width: 100%;
     display: flex;
@@ -100,7 +100,7 @@ header .header_logo_title {
 }
 
 #answers li span {
-    background-color: #FF9800;
+    background-color: #f7b62a;
     color: #fff;
     font-size: 30px;
     flex: 75px;

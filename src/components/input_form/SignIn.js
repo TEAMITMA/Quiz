@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
+        backgroundColor: "#f7b62a"
     },
 }));
 
@@ -58,11 +59,10 @@ export default function SignIn() {
         <Container component="main" maxWidth="xs">
             <CssBaseline />
             <div className={classes.paper}>
-                <Avatar className={classes.avatar}>
-                    <LockOutlinedIcon />
-                </Avatar>
+          <img src="https://bucket.mwsapp.com/laclasse/casiologo.svg" width="240" alt="Logo" />;
+
                 <Typography component="h1" variant="h5">
-                    Fill Up the Form to Start the Quiz
+                    Bienvenue à la compétition. / مرحبا بكم في المسابقة
                 </Typography>
                 <form onSubmit={GoToPage} className={classes.form} noValidate>
                     <TextField
@@ -71,7 +71,7 @@ export default function SignIn() {
                         required
                         fullWidth
                         id="email"
-                        label="Name"
+                        label="Nom"
                         name="name"
                         autoFocus
                         onChange={updateName}
@@ -83,7 +83,7 @@ export default function SignIn() {
                         required
                         fullWidth
                         id="email"
-                        label="Email Address"
+                        label="Adresse email"
                         name="email"
                         autoComplete="email"
                         autoFocus
@@ -94,10 +94,10 @@ export default function SignIn() {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        color="primary"
+                        color="#f7b62a"
                         className={classes.submit}
                     >
-                        Go
+                        Commencez
                     </Button>
                 </form>
             </div>

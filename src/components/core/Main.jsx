@@ -12,7 +12,7 @@ class Main extends Component {
             showButton: false,
             questionAnswered: false,
             score: 0,
-            displayPopup: 'flex'
+            displayPopup: 'none'
         }
         this.nextQuestion = this.nextQuestion.bind(this);
         this.handleShowButton = this.handleShowButton.bind(this);
@@ -28,6 +28,7 @@ class Main extends Component {
     insertData(count) {
         this.setState({
             question: data[count].question,
+            questionAR: data[count].questionAR,
             answers: [  data[count].answers[0], 
                         data[count].answers[1], 
                         data[count].answers[2], 
@@ -79,7 +80,7 @@ class Main extends Component {
 
   render() {
 
-    let { count, total, question, answers, correct, showButton, questionAnswered, displayPopup, score} = this.state;
+    let { count, total, question ,questionAR, answers, correct, showButton, questionAnswered, displayPopup, score} = this.state;
 
     return (
       <div className="container">
@@ -95,6 +96,7 @@ class Main extends Component {
                 <div id="question">
                     <h4 className="bg-light">Question {count}/{total}</h4>
                     <p>{question}</p>
+                    <p dir='rtl'>{questionAR}</p>
                 </div>
 
                 <Answers 
