@@ -15,9 +15,11 @@ export default [
     {
         question: 'Toute fonction continue sur un intervalle I est \n' +
             'Monotone sur I .\n',
-        answers: [
-            'Vrai',
-            'Faux',
+         questionAR: 'كل دالة متصلة على مجال I هي رتيبة على نفس المجال : ',
+
+         answers: [
+            'Vrai / صحيح',
+            'Faux / خطأ',
             '',
             ''
         ],
@@ -25,19 +27,21 @@ export default [
     },    
     {
         question: 'Pour tout réel m de l’intervalle]-2 ;2[, l’équation x³-3x = m admet trois solutions distinctes.',
-        answers: [
-            'Vrai',
-            'Faux',
+        questionAR: 'المعادلة x³ - 3x = m  تقبل ثلاثة حلول مختلفة , لكل عدد حقيقي m ينتمي للمجال ]-2 ;2[',
+         answers: [
+            'Vrai / صحيح',
+            'Faux / خطأ',
             '',
             ''
-        ],    
+        ],   
         correct: 1
     },    
     {
         question: 'Si f  est une fonction continue sur intervalle [a ; b] et f(a) et f(b) ont deux signes opposés alors l’équation f(x)=0',
-        answers: [
-            'Vrai',
-            'Faux',
+        questionAR : 'إذا  كانت f دالة متصلة على مجال  [a ; b] و f(a) و  f(b) لهما إشارتين مختلفتين إذن المعادلة f(x)=0',
+         answers: [
+            'Vrai / صحيح',
+            'Faux / خطأ',
             '',
             ''
         ],
@@ -45,9 +49,10 @@ export default [
     },
     {
         question: 'L’équation tan x = 27 admet une unique solution sur l’intervalle]-π/2  ;  π/2[',
+        questionAR : ' المعادلة tan x = 27  تقبل حلا وحيدا في المجال ]-π/2  ;  π/2[',
         answers: [
-            'Vrai',
-            'Faux',
+            'Vrai / صحيح',
+            'Faux / خطأ',
             '',
             ''
         ],
@@ -57,6 +62,7 @@ export default [
         question: 'Soient f et g deux fonctions définies sur un intervalle ouvert I et x₀ ∈ I\n' +
             'Si (∀ x ∈ I) : f(x)g( x  )\n' +
             'et (〖 lim〗⁡〖f(x)〗=)┬(x→x₀)  I et (〖 lim〗⁡〖g(x)〗=)┬(x→x₀)  I\' alors :\n',
+        questionAR: "لتكن f و g دالتين معرفتين على مجال مفتوح I و x تنتمي للمجال I إذا كان (∀ x ∈ I) : f(x)<g( x  ) و      (lim⁡〖f(x)〗=)┬(x→x₀)  I et (lim⁡〖g(x)〗=)┬(x→x₀)  I' اذن",
         answers: [
             'I = I’       ',
             'I < I’        ',
@@ -67,31 +73,33 @@ export default [
     },
     {
         question: 'La fonction E : x→E(x)',
+        questionAR : 'لتكن الدالة E المعرفة كما يلي: x→E(x)',
         answers: [
-            'Est continue à gauche en 2',
-            'Est continue à droite en 2',
-            'Est continue en 2',
-            'Est continue sur [1 ;2['
+            'Est continue à gauche en || متصلة على اليسار في 2',
+            'Est continue à droite en 2 || متصلة على اليمين في 2',
+            'Est continue en 2 || متصلة في 2',
+            'Est continue sur [1 ;2[ || [1 ;2[ متصلة على المجال '
         ],    
         correct: 4
     },
     {
         question: 'Soit f la fonction définie par :\t\n' +
             '\tf(x)=√(x^2 (x-1)) on a :\n',
+        questionAR : 'لتكن f الدالة المعرفة كما يلي f(x)=√(x^2 (x-1))',
         answers: [
             'D f = [1 ; +∞[',
             'D f = {0} ∪[1 ; +∞[',
-            'f est continue en 0',
-            'f n’admet pas limite en 0'
+            'f est continue en 0 || f متصلة على 0',
+            'f n’admet pas limite en 0 || f  لا تقبل نهاية في 0'
         ],
         correct: 4
     },
     {
         question: 'L’image de l’intervalle [0 ; 4] par la fonction :\n' +
             '  f: x→2x-√x est l’intervalle [0 ; 6]\n',
-        answers: [
-            'Vrai',
-            'Faux',
+         answers: [
+            'Vrai / صحيح',
+            'Faux / خطأ',
             '',
             ''
         ],
@@ -99,9 +107,9 @@ export default [
     },
     {
         question: '      √(√(√(2 )) )  = ∛2',
-        answers: [
-            'Vrai',
-            'Faux',
+         answers: [
+            'Vrai / صحيح',
+            'Faux / خطأ',
             '',
             ''
         ],
@@ -124,9 +132,9 @@ export default [
             '     f(x)=√(x-2)   ;  Si x≥2\n' +
             '     f(x)= x²+kx+1 ;  Si  x<2\n' +
             'il existe une unique valeur de k pour laquelle f est continue au point 2\n',
-        answers: [
-            'Vrai',
-            'Faux',
+         answers: [
+            'Vrai / صحيح',
+            'Faux / خطأ',
             '',
             ''
         ],
@@ -179,9 +187,9 @@ export default [
     },
     {
         question: 'lim┬(t→0)  sin²t/t=1',
-        answers: [
-            'Vrai',
-            'Faux',
+         answers: [
+            'Vrai / صحيح',
+            'Faux / خطأ',
             '',
             ''
         ],
@@ -192,9 +200,9 @@ export default [
             'Par   f(x)=  1/(x-1) ; si x >2\n' +
             '        f(2)=1\n' +
             'est continue en 2\n',
-        answers: [
-            'Vrai',
-            'Faux',
+         answers: [
+            'Vrai / صحيح',
+            'Faux / خطأ',
             '',
             ''
         ],
