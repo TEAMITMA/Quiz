@@ -62,7 +62,7 @@ export default [
         question: 'Soient f et g deux fonctions définies sur un intervalle ouvert I et x₀ ∈ I\n' +
             'Si (∀ x ∈ I) : f(x)g( x  )\n' +
             'et (〖 lim〗⁡〖f(x)〗=)┬(x→x₀)  I et (〖 lim〗⁡〖g(x)〗=)┬(x→x₀)  I\' alors :\n',
-        questionAR: "لتكن f و g دالتين معرفتين على مجال مفتوح I و x تنتمي للمجال I إذا كان (∀ x ∈ I) : f(x)<g( x  ) و      (lim⁡〖f(x)〗=)┬(x→x₀)  I et (lim⁡〖g(x)〗=)┬(x→x₀)  I' اذن",
+        questionAR: "لتكن f و g دالتين معرفتين على مجال مفتوح I و x تنتمي للمجال I إذا كان (∀ x ∈ I) : f(x)<g( x ) و      lim┬(x→x₀)⁡〖g(x)〗= I'lim┬(x→x₀)〖f(x)〗= I اذن",
         answers: [
             'I = I’       ',
             'I < I’        ',
@@ -85,7 +85,7 @@ export default [
     {
         question: 'Soit f la fonction définie par :\t\n' +
             '\tf(x)=√(x^2 (x-1)) on a :\n',
-        questionAR : 'لتكن f الدالة المعرفة كما يلي f(x)=√(x^2 (x-1))',
+        questionAR : 'لتكن f الدالة المعرفة كما يلي f(x)=√(x^2 (x-1)) لدينا',
         answers: [
             'D f = [1 ; +∞[',
             'D f = {0} ∪[1 ; +∞[',
@@ -121,10 +121,10 @@ export default [
             'Croissante sur ]a,b[ alors :\n',
             questionAR : 'إذا كانت f دالة متصلة و تزايدية قطعا على ]a,b[  إذن:',
         answers: [
-            "Est la fonction f  ̄¹ est continue sur f(]a ;b[) || الدالة العكسية f  ̄¹ متصلة على f(]a ;b[)",
-            'La fonction f  ̄¹ est définie sur ]lim┬(x→a˖)⁡〖f(a) ;〗   lim┬(x→b  ̄)⁡〖f(b)[〗 ||  الدالة العكسية  f  ̄¹  معرفة على ]lim┬(x→a˖)⁡〖f(a) ;〗   lim┬(x→b  ̄)⁡〖f(b)[〗',
-            'L’équation f(x)=0 admet une unique solution dans ]a ;b[  ||  المعادلة   f(x)=0  تقبل حلا وحيدا على ]a ;b[',
-            "La fonction f  ̄¹ est strictement décroissante\n' Sur f(]a ;b[)\n || الدالة  f  ̄¹ تناقصية قطعا على f(]a ;b[)"
+            "Est la fonction (الدالة العكسية) f  ̄¹ (متصلة على) est continue sur f(]a ;b[) ",
+            'La fonction (الدالة العكسية) f  ̄¹ (معرفة على) est définie sur ]lim┬(x→a˖)⁡f(a) ; lim┬(x→b)f(b)[',
+            'L’équation (المعادلة) f(x)=0 admet une unique solution dans (تقبل حلا وحيدا على) ]a ;b[ ',
+            "La fonction (الدالة) f  ̄¹ est strictement décroissante sur (تناقصية قطعا على) f(]a ;b[)",
         ],
         correct: [1,2]
     },
@@ -133,7 +133,7 @@ export default [
             '     f(x)=√(x-2)   ;  Si x≥2\n' +
             '     f(x)= x²+kx+1 ;  Si  x<2\n' +
             'il existe une unique valeur de k pour laquelle f est continue au point 2\n',
-            questionAR : ". لتكن f دالة معرفة على R بما يلي: f(x)=√(x-2)   ;  Si x≥2 f(x)= x²+kx+1 ;  Si  x<2",
+            questionAR : ". لتكن f دالة معرفة على R بما يلي: f(x)=√(x-2)   ;  Si x≥2 | f(x)= x²+kx+1 ;  Si  x<2",
          answers: [
             'Vrai / صحيح',
             'Faux / خطأ',
@@ -148,7 +148,7 @@ export default [
             '     f(x)=1-2x ; x<0\n' +
             '     f(0)=  2\n' +
             'est continue sur :\n',
-        questionAR:'لتكن الدالة f المعرفة على R بما يلي:  f(x)=sin⁡2x/x ;  x>0  f(x)=1-2x ; x<0  f(0)=  2',
+        questionAR:'لتكن الدالة f المعرفة على R بما يلي:  f(x)=sin⁡2x/x ;  x>0 |  f(x)=1-2x ; x<0 | f(0)=  2',
         answers: [
             'R',
             ']-∞ ;0[',
@@ -171,12 +171,12 @@ export default [
     },
     {
         question: 'la fonction réciproque de la fonction f définie sur [0 ; +∞[ par f(x)=x²+1 est :',
-        questionAR : 'الدالة العكسية على للدالة f المعرقة بما يلي: [0 ; +∞[ par f(x)=x²+1 هي ',
+        questionAR : 'الدالة العكسية على للدالة f المعرقة بما يلي: [0 ; +∞[ : f(x)=x²+1 هي ',
         answers: [
-            'La fonction f  ̄¹ définie sur [1 ; +∞[ par f  ̄¹( x)= -√(x-1) || f  ̄¹( x)= -√(x-1) المعرفة على [1 ; +∞[',
-            'La fonction f  ̄¹ définie sur ]1 ; +∞[ par f  ̄¹( x)= √(x-1) || f  ̄¹( x)= √(x-1) المعرفة على ]1 ; +∞[',
-            'La fonction f  ̄¹ définie sur [1 ; +∞[ par f  ̄¹( x)= √(x-1) || f  ̄¹( x)= √(x-1) المعرفة على [1 ; +∞[',
-            'Continue sur [1 ; +∞[  || متصلة عل [1 ; +∞['
+            'La fonction (الدالة) f  ̄¹ (المعرفة على) définie sur [1 ; +∞[ par f  ̄¹( x)= -√(x-1)',
+            'La fonction (الدالة) f  ̄¹ (المعرفة على) définie sur ]1 ; +∞[ par f  ̄¹( x)= √(x-1) ',
+            'La fonction (الدالة) f  ̄¹ (المعرفة على)définie sur [1 ; +∞[ par f  ̄¹( x)= √(x-1)',
+            '(متصلة على) Continue sur  [1 ; +∞[  '
         ],
         correct: [3,4]
     },
@@ -184,10 +184,10 @@ export default [
         question: 'la fonction f : x→¬ | x²-1|',
         questionAR : ' الدالة f : x→¬ | x²-1|:',
         answers: [
-            'Est Continue sur ]- ∞;-1] et [1;+∞[ || متصلة عل ]- ∞;-1] و [1;+∞[ ',
-            'Est non continue en en 1 || غير متصلة في 1',
-            'Est non continue en -1 || غير متصلة في -1',
-            'Est continue en R || متصلة في R'
+            '(متصلة على) Est Continue sur ]- ∞;-1] et [1;+∞[ ',
+            '(غير متصلة في) Est non continue en 1' ,
+            '(غير متصلة في) Est non continue en -1',
+            '(متصلة على) Est continue en R'
         ],
         correct: 4
     },
@@ -206,7 +206,7 @@ export default [
             'Par   f(x)=  1/(x-1) ; si x >2\n' +
             '        f(2)=1\n' +
             'est continue en 2\n',
-            questionAR : '. الدالة f المعرفة على [2 ; +∞[  كما يلي: f(x)=  1/(x-1) ; si x >2 f(2)=1 متصلة في 2  ',
+            questionAR : '. الدالة f المعرفة على [2 ; +∞[  كما يلي: f(x)=  1/(x-1) ; si x >2 | f(2)=1 متصلة في 2  ',
          answers: [
             'Vrai / صحيح',
             'Faux / خطأ',
@@ -233,10 +233,10 @@ export default [
             '   f(x)=x^8+ 2 x⁴\n',
         questionAR : 'لتكن :f دالة معرفة كما يلي  f(x)=x^8+ 2 x⁴ لدينا',
         answers: [
-            'lim┬(n→+∞)⁡〖f(x)=〗 +∞',
-            'lim┬(n→-∞)⁡〖f(x)=〗  -∞',
-            'lim┬(n→+∞)⁡〖f(x)=〗 -∞',
-            'lim┬(n→-∞)⁡〖f(x)=〗  +∞'
+            'lim┬(n→+∞)⁡〖f(x)〗= +∞',
+            'lim┬(n→-∞)⁡〖f(x)〗= -∞',
+            'lim┬(n→+∞)⁡〖f(x)〗= -∞',
+            'lim┬(n→-∞)⁡〖f(x)〗= +∞'
         ],
         correct: [1,4]
     }
