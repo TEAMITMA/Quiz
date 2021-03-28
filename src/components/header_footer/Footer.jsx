@@ -7,7 +7,7 @@ const Footer = () => {
             <Fade delay={500}>
                 <div className="footer_copyright">
                     Made By
-                <a href="https://compte.laclasse.ma/laclassepro" target="_blank"           rel="noopener noreferrer"> Laclasse Team
+                <a href="https://laclasse.ma/" target="_blank"           rel="noopener noreferrer"> Laclasse Team
                 </a>
                 </div>
             </Fade>

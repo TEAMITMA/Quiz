@@ -23,10 +23,13 @@ class Main extends Component {
 
     componentWillMount() {
         let { count } = this.state;
+       this.nextQuestion();
         this.insertData(count);
+
     }
 
     insertData(count) {
+
         this.setState({
             question: data[count].question,
             questionAR: data[count].questionAR,
