@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import data from '../questions_data/data';
 import Answers from './Answers.jsx';
 import Popup from './Popup.jsx';
-
+import firebase from '../../../utils/database'
+const db = firebase.firestore();
 class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            count: 0,
+            count: 1,
             total: data.length,
             showButton: false,
             questionAnswered: false,
@@ -47,6 +48,8 @@ class Main extends Component {
     }
     
     nextQuestion() {
+        this.checkEquality()
+
         let { count, total} = this.state;
         this.setState({
             count: this.state.count + 1
@@ -78,6 +81,26 @@ class Main extends Component {
         });
     }
 
+    checkEquality() {
+
+        let { count, total} = this.state;
+        if (count == total) {
+            let name = localStorage.getItem("name");
+            let email = localStorage.getItem("email");
+            let results = localStorage.getItem("results");
+            results = JSON.parse(results)
+            db.collection('results')
+                .add({ createdAt: new Date(Date.now()),
+                name , email, results })
+                .then(querySnapshot => {
+                    localStorage.removeItem('name');
+                    localStorage.removeItem('email');
+                    localStorage.removeItem('results');
+            });
+
+        }
+    }
+
   render() {
 
     let { count, total, question ,questionAR, answers, correct, showButton, questionAnswered, displayPopup, score} = this.state;
@@ -90,7 +113,8 @@ class Main extends Component {
              total={total} 
              startQuiz={this.handleStartQuiz}
         />
-        
+          {console.log({count, question})}
+
         <div className="row">
             <div className="col-lg-12 col-md-10">
                 <div id="question">
