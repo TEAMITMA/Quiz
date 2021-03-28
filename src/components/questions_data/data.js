@@ -11,6 +11,18 @@ export default [
         ],
         correct: 1
     },
+    {
+        question: 'Pour tout a de]0 ;π[ on a :  lim┬(t→a)  1/tsint=1/asina ',
+        questionAR: ' لكل عنصر a من ]0 ;π[  لدينا lim┬(t→a)  1/tsint=1/asina',
+
+        answers: [
+            'Vrai / صحيح',
+            'Faux / خطأ',
+            '',
+            ''
+        ],
+        correct: 1
+    },
 
     {
         question: 'Toute fonction continue sur un intervalle I est \n' +
@@ -106,7 +118,7 @@ export default [
         correct: 2
     },
     {
-        question: '      √(√(√(2 )) )  = ∛2',
+        question: ' √(√(√(2 )) )  = ∛2',
          answers: [
             'Vrai / صحيح',
             'Faux / خطأ',
