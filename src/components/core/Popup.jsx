@@ -44,19 +44,19 @@ class Popup extends Component {
     }
 
      savedData(jsonData,filename) {
-        console.log("creating")
+        // console.log("creating")
         const fileData = JSON.stringify(jsonData);
         const blob = new Blob([fileData], {type: "text/plain"});
         const url = URL.createObjectURL(blob);
-         console.log("creating1")
+         // console.log("creating1")
 
          const link = document.createElement('a');
         link.download = `./${filename}.json`;
-         console.log("creating",link)
+         // console.log("creating",link)
 
          link.href = url;
          link.click();
-         console.log("creating done",link)
+         // console.log("creating done",link)
 
      }
      
