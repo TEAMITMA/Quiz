@@ -250,7 +250,7 @@ header .header_logo_title {
 ======================*/
 
 footer {
-    padding:50px 0px;
+    padding:20px 0px;
     text-align: center;
     font-size: 60px;
     color:#ffffff;
@@ -263,5 +263,5 @@ footer .footer_copyright {
 
 .footer_copyright a{
     text-decoration: none;
-    color:#0094da;
+    color:#f7b62a;
 }
