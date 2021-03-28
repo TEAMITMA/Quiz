@@ -92,7 +92,7 @@ class Main extends Component {
             let email = localStorage.getItem("email");
             let results = localStorage.getItem("results");
             results = JSON.parse(results)
-            let removedItems = results.splice(1, 20)
+            // let removedItems = results.splice(1, 20)
             // console.log(results)
             // if(results[0] == 0) {
             //     results = results.unshift(0)
@@ -100,7 +100,7 @@ class Main extends Component {
             //     results = results.unshift(1)
             // }
             let sc = 0
-            removedItems.map(result => {
+            results.map(result => {
                 // console.log(result)
                 if(result == 1){
                     sc = sc+1
@@ -108,7 +108,7 @@ class Main extends Component {
             })
             db.collection('results')
                 .add({ createdAt: new Date(Date.now()),
-                name , email, results: removedItems , numbers: `${sc}/${total}`, score:sc })
+                name , email, results: results , numbers: `${sc}/${total}`, score:sc })
                 .then(querySnapshot => {
                     localStorage.removeItem('name');
                     localStorage.removeItem('email');
