@@ -83,15 +83,22 @@ class Main extends Component {
 
     checkEquality() {
 
-        let { count, total} = this.state;
+        let { count, total, score} = this.state;
         if (count == total) {
             let name = localStorage.getItem("name");
             let email = localStorage.getItem("email");
             let results = localStorage.getItem("results");
             results = JSON.parse(results)
+            let sc = 0
+            results.map(result => {
+                // console.log(typeof(result))
+                if(result == 1){
+                    sc = sc+1
+                }
+            })
             db.collection('results')
                 .add({ createdAt: new Date(Date.now()),
-                name , email, results })
+                name , email, results , numbers: `${sc}/${total}` })
                 .then(querySnapshot => {
                     localStorage.removeItem('name');
                     localStorage.removeItem('email');
@@ -113,7 +120,7 @@ class Main extends Component {
              total={total} 
              startQuiz={this.handleStartQuiz}
         />
-          {console.log({count, question})}
+          {/*{console.log({count, question})}*/}
 
         <div className="row">
             <div className="col-lg-12 col-md-10">

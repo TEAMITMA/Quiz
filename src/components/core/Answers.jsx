@@ -16,7 +16,7 @@ class Answers extends Component {
     checkAnswer(e) {
         let { isAnswered } = this.props;
 
-        console.log("hi", isAnswered)
+        // console.log("hi", isAnswered)
 
         if(!isAnswered) {
             let elem = e.currentTarget;
