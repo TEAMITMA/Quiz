@@ -24,29 +24,65 @@ class Answers extends Component {
             let answer = Number(elem.dataset.id);
             let updatedClassNames = this.state.classNames;
 
-            if(answer === correct){
-                updatedClassNames[answer-1] = 'right';
-                let results = localStorage.getItem("results");
-                if(results){
-                    results = JSON.parse(results)
-                    results.push(1);
-                    localStorage.setItem('results', JSON.stringify(results));
+            // console.log({answer,correct})
+            if (correct instanceof Array) {
+                let flag = false;
+                correct.map(singleCorrect=>{
+                    if(answer == singleCorrect){
+                        flag = true
+                    }
+                })
+
+                if(flag==true){
+                    updatedClassNames[answer-1] = 'right';
+                    let results = localStorage.getItem("results");
+                    if(results){
+                        results = JSON.parse(results)
+                        results.push(1);
+                        localStorage.setItem('results', JSON.stringify(results));
+                    }else{
+                        localStorage.setItem('results', "[1]");
+                    }
+                    increaseScore();
                 }else{
-                    localStorage.setItem('results', "[1]");
+                    updatedClassNames[answer-1] = 'right';
+                    let results = localStorage.getItem("results");
+                    if(results){
+                        results = JSON.parse(results)
+                        results.push(0);
+                        localStorage.setItem('results', JSON.stringify(results));
+                    }else{
+                        localStorage.setItem('results', "[0]");
+                    }
                 }
-                increaseScore();
-            }
-            else {
-                updatedClassNames[answer-1] = 'right';
-                let results = localStorage.getItem("results");
-                if(results){
-                    results = JSON.parse(results)
-                    results.push(0);
-                    localStorage.setItem('results', JSON.stringify(results));
-                }else{
-                    localStorage.setItem('results', "[0]");
+
+            } else {
+                if(answer === correct){
+                    updatedClassNames[answer-1] = 'right';
+                    let results = localStorage.getItem("results");
+                    if(results){
+                        results = JSON.parse(results)
+                        results.push(1);
+                        localStorage.setItem('results', JSON.stringify(results));
+                    }else{
+                        localStorage.setItem('results', "[1]");
+                    }
+                    increaseScore();
+                }
+                else {
+                    updatedClassNames[answer-1] = 'right';
+                    let results = localStorage.getItem("results");
+                    if(results){
+                        results = JSON.parse(results)
+                        results.push(0);
+                        localStorage.setItem('results', JSON.stringify(results));
+                    }else{
+                        localStorage.setItem('results', "[0]");
+                    }
                 }
             }
+
+
 
             this.setState({
                 classNames: updatedClassNames,
