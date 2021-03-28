@@ -80,7 +80,7 @@ export default [
             'Est continue en 2 || متصلة في 2',
             'Est continue sur [1 ;2[ || [1 ;2[ متصلة على المجال '
         ],    
-        correct: 4
+        correct: [2,4]
     },
     {
         question: 'Soit f la fonction définie par :\t\n' +
@@ -126,7 +126,7 @@ export default [
             'L’équation (المعادلة) f(x)=0 admet une unique solution dans (تقبل حلا وحيدا على) ]a ;b[ ',
             "La fonction (الدالة) f  ̄¹ est strictement décroissante sur (تناقصية قطعا على) f(]a ;b[)",
         ],
-        correct: 1
+        correct: [1,2]
     },
     {
         question: 'Soit la fonction f définie sur R par :\n' +
@@ -155,7 +155,7 @@ export default [
             '[-1 ; 2]',
             '[0 ;+∞['
         ],
-        correct: 4
+        correct: [2,4]
     },
     {
         question: 'l’équation x³+x²+x+2=0\n' +
@@ -178,7 +178,7 @@ export default [
             'La fonction (الدالة) f  ̄¹ (المعرفة على)définie sur [1 ; +∞[ par f  ̄¹( x)= √(x-1)',
             '(متصلة على) Continue sur  [1 ; +∞[  '
         ],
-        correct: 3
+        correct: [3,4]
     },
     {
         question: 'la fonction f : x→¬ | x²-1|',
@@ -238,6 +238,6 @@ export default [
             'lim┬(n→+∞)⁡〖f(x)〗= -∞',
             'lim┬(n→-∞)⁡〖f(x)〗= +∞'
         ],
-        correct: 1
+        correct: [1,4]
     }
 ]
