@@ -98,7 +98,7 @@ class Main extends Component {
             })
             db.collection('results')
                 .add({ createdAt: new Date(Date.now()),
-                name , email, results , numbers: `${sc}/${total}` })
+                name , email, results , numbers: `${sc}/${total}`, score:sc })
                 .then(querySnapshot => {
                     localStorage.removeItem('name');
                     localStorage.removeItem('email');
