@@ -8,7 +8,7 @@ class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            count: 1,
+            count: 0,
             total: data.length,
             showButton: false,
             questionAnswered: false,
@@ -71,7 +71,7 @@ class Main extends Component {
     handleStartQuiz() {
         this.setState({
             displayPopup: 'none',
-            count: 1
+            count: 0
         });
     }
 
