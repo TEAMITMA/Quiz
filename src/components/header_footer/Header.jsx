@@ -27,7 +27,7 @@ function DenseAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" className={classes.color}> 
         <Toolbar variant="dense">
-          <img src="https://bucket.mwsapp.com/laclasse/logo.png" width="240" alt="Logo" />;
+          <img src="https://bucket.mwsapp.com/laclasse/logo.png" width="180" alt="Logo" />;
         </Toolbar>
       </AppBar>
     </div>

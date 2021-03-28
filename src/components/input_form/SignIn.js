@@ -170,11 +170,12 @@ export default function SignIn() {
         <Container component="main" maxWidth="xs">
             <CssBaseline />
             <div className={classes.paper}>
-          <img src="https://bucket.mwsapp.com/laclasse/casiologo.svg" width="240" alt="Logo" />;
+                                      <img src="https://bucket.mwsapp.com/laclasse/casiologo.svg" width="180px" alt="Logo" /> 
 
-                <Typography component="h1" variant="h5">
-                    Bienvenue à la compétition. / مرحبا بكم في المسابقة
+                <Typography component="h3" variant="h6">
+                    Bienvenue à la compétition/مرحبا بكم في المسابقة
                 </Typography>
+
                 <form onSubmit={GoToPage} className={classes.form} noValidate>
                     <TextField
                         variant="outlined"
@@ -212,6 +213,7 @@ export default function SignIn() {
                         Commencez
                     </Button>
                 </form>
+                            <iframe width="420" height="345" src="http://www.youtube.com/embed/eR_yfT-NapU?autoplay=1" frameborder="0" allowfullscreen></iframe>
             </div>
         </Container>
     );
