@@ -249,14 +249,14 @@ export default function SignIn() {
         //         })
         // })
 
-        db.collection('users-quiz-2').where("email", "==", email)
+        db.collection('users-quiz-2').where("email", "==", email.toLowerCase())
             .get()
             .then(querySnapshot => {
                 const data = querySnapshot.docs.map(doc => doc.data());
                 if(data.length == 0){
                     setError("Vous ne faites pas partie du groupe autorisé à passer ce quiz.")
                 }else{
-                    db.collection('results-quiz-2').where("email", "==", email)
+                    db.collection('results-quiz-2').where("email", "==", email.toLowerCase())
                         .get()
                         .then(snap => {
                             const data = snap.docs.map(doc => doc.data());
@@ -264,7 +264,7 @@ export default function SignIn() {
                                 setError("Vous avez déjà passé ce quiz.")
                             }else{
                                 localStorage.setItem('name', user);
-                                localStorage.setItem('email', email);
+                                localStorage.setItem('email', email.toLowerCase());
                                 window.location.reload();
                             }
                         })
