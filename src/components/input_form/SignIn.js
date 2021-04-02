@@ -49,6 +49,120 @@ export default function SignIn() {
     const GoToPage = (values) => {
         values.preventDefault();
 
+        // const emails = [
+        //     {name: "Mohammad Jaber             ",email: "456mohamedsimo@gmail.com"},
+        //     {name: "Asma Hibat Allah           ",email: "a.hibatallah.s2018@lydex.ma"},
+        //     {name: "Amine Arfaoui              ",email: "aarfaoui617@gmail.com"},
+        //     {name: "Salma aarouss              ",email: "aarouss146salma@gmail.com"},
+        //     {name: "Dakir-Allah                ",email: "abdeldakirallah@gmail.com"},
+        //     {name: "Abdelghani jetti           ",email: "abdelghanijetti12@gmail.com"},
+        //     {name: "Abdellatif Boumalek        ",email: "Abdellatifboumalek@gmail.com"},
+        //     {name: "Abdennour haddoudi         ",email: "abdennourhaddoudi@gmail.com"},
+        //     {name: "Abderrafie Elghalam        ",email: "abder2003rafie@gmail.com"},
+        //     {name: "Abderahim al ouriachi      ",email: "abderahimouriachi@gmail.com"},
+        //     {name: "Abderrahmane hafdane       ",email: "abdo.abiido@gmail.com"},
+        //     {name: "Adam EL YAAGOUBI           ",email: "adam3elyaagoubi@gmail.com"},
+        //     {name: "Adnane Aidoudi             ",email: "adnanaidoudi@gmail.com"},
+        //     {name: "Omar ait aabou             ",email: "aitaabouomar@gmail.com"},
+        //     {name: "Abderrahim ait baha        ",email: "aitbahaabderrahim2@gmail.com"},
+        //     {name: "Mohamed Ajhih              ",email: "ajhihsimo@gmail.com"},
+        //     {name: "Ayoub alkhaldi             ",email: "alkhaldyaywb2@gmail.com"},
+        //     {name: "Hamza friteh               ",email: "allhwatalhswn@gmail.com"},
+        //     {name: "Hafed almekki              ",email: "allostora@gmail.ma"},
+        //     {name: "Ahmed idmachiche           ",email: "aloneidma@gmail.com"},
+        //     {name: "Amine houmine              ",email: "amine.houmine@gmail.com"},
+        //     {name: "Mohamed amine erraji       ",email: "amine.m4a@icloud.com"},
+        //     {name: "Amine al salhi             ",email: "aminesalhie1234@gmail.com"},
+        //     {name: "Aymane allami              ",email: "aymaneallami0778@gmail.com"},
+        //     {name: "Abdalilah BENYAICH         ",email: "benyaich.etude@gmail.com"},
+        //     {name: "Bilal sebti                ",email: "bilalsebti2016@gmail.com"},
+        //     {name: "Hafsa bouallak             ",email: "bouallakhafsa@gmail.com"},
+        //     {name: "Ibrahim Bouzarrib          ",email: "bouzarrihab@gmail.com"},
+        //     {name: "Nourredine echhayeb        ",email: "c2h0a0y3b@gmail.com"},
+        //     {name: "Moad Ech-chadili           ",email: "chadili.mouad1@gmail.com"},
+        //     {name: "Mohamed dyn                ",email: "dynmohamed5@gmail.com"},
+        //     {name: "Mouhamed elbourkadi        ",email: "elbourkadimouhamed26@gmail.com"},
+        //     {name: "Casio El hassani abdellah  ",email: "elhassani2003abdellah@gmail.com"},
+        //     {name: "Casio rachida amrhar       ",email: "elmahrarrachida@gmail.com"},
+        //     {name: "Youssef al ziadi           ",email: "ezzidanyy@gmail.com"},
+        //     {name: "Fatima Mhamedi             ",email: "fatimamhamedu21@gmail.com"},
+        //     {name: "Oussama Bekri              ",email: "fbekri00@gmail.com"},
+        //     {name: "Abdelmonam Foulane         ",email: "foulanea@gmail.ma"},
+        //     {name: "Casio Hajar tassine        ",email: "hajartassine@gmail.com"},
+        //     {name: "Hamza Zakri                ",email: "hamzakri2020@gmail.com"},
+        //     {name: "Chaima alhyane             ",email: "hsantamri2019@gmail.com"},
+        //     {name: "Mohamed zaamou             ",email: "i.freedomheart111@gmail.com"},
+        //     {name: "Ibrahim aarab              ",email: "ibrahimaarabdotcom@gmail.com"},
+        //     {name: "Rafik ait ichou            ",email: "ichourafik011@gmail.com"},
+        //     {name: "Idriss boukadr             ",email: "idriss55boukadr@gmail.com"},
+        //     {name: "Casio Imad agjoud          ",email: "imadhulk12@gmail.com"},
+        //     {name: "Imane Souilah              ",email: "isouilah59@gmail.com"},
+        //     {name: "Youssef Benaissa           ",email: "kharoubaa2011@gmail.com"},
+        //     {name: "Casio ibrahim lasfar       ",email: "lasfaribrahim2003@gmail.com"},
+        //     {name: "Mohamed ait elrhazal       ",email: "maitelrhazal@gmail.com"},
+        //     {name: "Mohamed ait elrhazal       ",email: "maitelrhazal@gmail.com"},
+        //     {name: "Ahmed makroum              ",email: "makroum294@gmail.com"},
+        //     {name: "Manal Maazouzi             ",email: "manalmaazouzi83@gmail.com"},
+        //     {name: "Marwane elkhazzari         ",email: "marwaneelkhazzari@gmail.com"},
+        //     {name: "Marouane khazzari          ",email: "mc2003marwane@gmail.com"},
+        //     {name: "maiti mohammed amine       ",email: "med20201912@gmail.com"},
+        //     {name: "Mohammad Dahby             ",email: "mededdahby1@gmail.com"},
+        //     {name: "Mohammed ourqui            ",email: "medourkiya2021@gmail.com"},
+        //     {name: "Elmahdi saidi              ",email: "mehdi.bounoh@gmail.com"},
+        //     {name: "Mehdi cherefi              ",email: "mehdicherefi123@gmail.com"},
+        //     {name: "Mehdi majid                ",email: "mehdimajid763@gmail.com"},
+        //     {name: "Mehdi elhaoul              ",email: "mehdimehditaha@gmail.com"},
+        //     {name: "Meryem ouadi               ",email: "meryem7ou@gmail.com"},
+        //     {name: "Meryem Aoutem              ",email: "mimiloka532@gmail.com"},
+        //     {name: "Mohamed hmaoud             ",email: "mohamedhmaoud@gmail.com"},
+        //     {name: "Mohamed Rayan El Fadi      ",email: "mohamedrayanelfadi@gmail.com"},
+        //     {name: "El Mostafa Aneddame        ",email: "mostafaaneddame1.1@gmail.com"},
+        //     {name: "Oussama moustik            ",email: "moustikoussama17@gmail.com"},
+        //     {name: "Najwa Mourabet             ",email: "mrabetnajwa24@gmail.com"},
+        //     {name: "Nada sari                  ",email: "nadanadita1705@gmail.com"},
+        //     {name: "Salma Nafiaa               ",email: "nafiaasalma@gmail.com"},
+        //     {name: "Casio narjiss              ",email: "narjisskaza@gmail.com"},
+        //     {name: "El aceb Nouhaila           ",email: "nouhailaelaceb1@gmail.com"},
+        //     {name: "Nourabenhssine             ",email: "nourabenhssine35@gmail.com"},
+        //     {name: "noureddine belkbir         ",email: "noureddine66@gmail.com"},
+        //     {name: "Noureddine blekbir         ",email: "noureddineblkbir66@gmail.com"},
+        //     {name: "Nour houda Demnati         ",email: "nourhoudademnati@gmail.com"},
+        //     {name: "Kamal Ouhssata             ",email: "ouhssatakamal@gmail.com"},
+        //     {name: "Oumaima hargal             ",email: "oumaimahargal2019@gmail.com"},
+        //     {name: "Oumayya Bouziane           ",email: "oumayya.bouziane06@gmail.com"},
+        //     {name: "Kadraoui zaïneb            ",email: "oussamakadraoui123@gmail.com"},
+        //     {name: "Saad belkoutbi             ",email: "saadbelkoutbi88@gmail.com"},
+        //     {name: "Mohammed amine Sahal       ",email: "sahalmohammedamine@gmail.com"},
+        //     {name: "Said Anass                 ",email: "said.motik12@gmail.com"},
+        //     {name: "Said barhoune              ",email: "saidbarhoune12345@gmail.com"},
+        //     {name: "Salim Bassalh              ",email: "salimbassalh@gmail.com"},
+        //     {name: "Salim Elaychi              ",email: "salimelaychi16@gmail.com"},
+        //     {name: "Samir Swirki               ",email: "samirswirki4@gmail.com"},
+        //     {name: "Soumeya affoussi           ",email: "sayatazraibi@gmail.com"},
+        //     {name: "Siham kalach               ",email: "sihamkalach637@gmail.com"},
+        //     {name: "olayman oumouou            ",email: "solaymanoumouou@gmail.com"},
+        //     {name: "Souhaila ramdani           ",email: "souhailarm0@gmail.com"},
+        //     {name: "Tarik almoussawi           ",email: "tarik2004el@gmail.com"},
+        //     {name: "Walid Fankouch             ",email: "walidfank@gmail.com"},
+        //     {name: "Akhal wiame                ",email: "wiameakhal2003@gmail.com"},
+        //     {name: "Wissal essayouti           ",email: "wissalessayouti@gmail.com"},
+        //     {name: "Idriss boukadr             ",email: "www.idriss55boukadr@gmail.com"},
+        //     {name: "Yassine Otmane             ",email: "yassinotman386@gmail.com"},
+        //     {name: "Yassir Lili                ",email: "yassirlili25@gmail.com"},
+        //     {name: "Yassmine Mokarram          ",email: "ymine8041@gmail.com"},
+        //     {name: "Yoness edrissi             ",email: "yonessledrissi2020@gmail.com"},
+        //     {name: "Youssef Bouhtouch          ",email: "youssefbouhtouch@gmail.com"},
+        //     {name: "Youssef Lamri              ",email: "yousseflamri0777@gmail.com"},
+        //     {name: "Zakaria boulahlib          ",email: "zakariaboulahlib6@gmail.com"},
+        //     {name: "Zakaria Chliyah            ",email: "zakariachliyah888@gmail.com"},
+        //     {name: "Zakaria farhi              ",email: "zakariafarahi521@gmail.com"},
+        //     {name: "Zakaria moussafir          ",email: "zakariamoussafir6@gmail.com"},
+        //     {name: "Zakaria bechkala           ",email: "zbechkala@gmail.com"},
+        //     {name: "zineb benbaba              ",email: "zinebbenbaba03@gmail.com"},
+        //
+        // ]
+
+
         // const emails = [  "AGOUJIL104@gmail.com", "abdellatifboumalek@gmail.com", "abdou.ouahbi@yahoo.fr",
         //     "abdsamadlmzdah@gmail.com",
         //     "abirbehja18@gmail.com",
@@ -129,20 +243,20 @@ export default function SignIn() {
         // ]
 
         // emails.map( email => {
-        //     db.collection('users').add({ email, isDone: false })
+        //     db.collection('users-quiz-2').add({ email: email.email, name: email.name })
         //         .then(querySnapshot => {
         //
-        //         });
+        //         })
         // })
 
-        db.collection('users').where("email", "==", email)
+        db.collection('users-quiz-2').where("email", "==", email)
             .get()
             .then(querySnapshot => {
                 const data = querySnapshot.docs.map(doc => doc.data());
                 if(data.length == 0){
                     setError("Vous ne faites pas partie du groupe autorisé à passer ce quiz.")
                 }else{
-                    db.collection('results').where("email", "==", email)
+                    db.collection('results-quiz-2').where("email", "==", email)
                         .get()
                         .then(snap => {
                             const data = snap.docs.map(doc => doc.data());
