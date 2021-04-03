@@ -65,10 +65,10 @@ export default [
         //6
         question: 'Soient f et g deux fonctions définies sur un intervalle ouvert I et x₀ ∈ I\n' +
             'Si (∀ x ∈ I) : f(x)> g( x  )\n' +
-            'et (〖 lim〗⁡〖f(x)〗=)┬(x→x₀)  l  et (〖 lim〗⁡〖g(x)〗=)┬(x→x₀)  l\' alors :\n',
+            'et lim ┬(x→x₀) f(x)= l  et lim┬(x→x₀) g(x)= l\' alors :\n',
         questionAR: "لتكن f و g دالتين معرفتين على مجال مفتوح I و x تنتمي للمجال I\n" +
             "إذا كان (∀ x ∈ I) : f(x)> g( x  )\n" +
-            "و (〖 lim〗⁡f(x)=)┬(x→x^0 )  l  et (〖 lim〗⁡g(x)=)┬(x→x^0 )  l^'\n" +
+            "و lim┬(x→x₀)⁡f(x)= l et lim┬(x→x₀)⁡g(x)=l^'\n" +
             "إذن \n",
         answers: [
             'l = l’    ',
@@ -84,9 +84,9 @@ export default [
         questionAR : 'الدالة    f : x→√x',
         answers: [
             'Est continue à droite en (متصلة على اليمين في) 0',
-            'Est continue sur (متصلة على)  [0 ; +∞[/  ',
+            'Est continue sur (متصلة على)  [0 ; +∞[  ',
             'Est continue sur (متصلة على) ]- ∞;0]',
-            'd)\tN’est pas continue (غير متصلة)'
+            'N’est pas continue (غير متصلة)'
         ],    
         correct: 2
     },
@@ -133,7 +133,7 @@ export default [
             questionAR : 'إذا كانت f دالة متصلة و تزايدية قطعا على ]a,b[  إذن:',
         answers: [
             "La fonction (الدالة) g  ̄¹ est continue sur (متصلة على)  g(]a ;b[)",
-            'La fonction (الدالة)  g  ̄¹ est définie sur (معرفة على) ]lim┬(x→a˖)⁡〖g(a) ;〗   lim┬(x→b  ̄)⁡〖g(b)[〗',
+            'La fonction (الدالة)  g  ̄¹ est définie sur (معرفة على) ]lim┬(x→a˖)⁡g(a) ;   lim┬(x→b)⁡g(b)',
             'L’équation (المعادلة) g(x)=0 admet une unique solution dans(تقبل حلا وحيدا على)  ]a ;b[ ',
             "La fonction (الدالة)   g  ̄¹ est strictement décroissante sur (تناقصية قطعا على) g(]a ;b[)",
         ],
@@ -143,7 +143,7 @@ export default [
         //12
         question: 'Soit la fonction f définie sur R par :\n' +
             '     f(x)=√(x-2)   ;  Si x≥2\n' +
-            '     f(x)= x²+kx+1 ;  Si  x<2\n' +
+            '     |f(x)= x²+kx+1 ;  Si  x<2\n' +
             'il existe deux valeurs de k pour laquelle f est continue au point 2\n',
             questionAR : ". لتكن f دالة معرفة على R بما يلي: f(x)=√(x-2)   ;  Si x≥2 | f(x)= x²+kx+1 ;  Si  x<2",
          answers: [
@@ -158,10 +158,10 @@ export default [
         //13
         question: 'Soit la fonction f définie sur R par :\n' +
             '          f(x)=x²+2x ;  x≤1\n' +
-            '     f(x)=a  sin⁡〖(x-1)〗/(x-1); x>1\n' +
+            '     |f(x)=a  sin⁡ (x-1)/(x-1); x>1\n' +
             ' la valeur de a pour que f soit continue en 1\n',
         questionAR:'لتكن الدالة f المعرفة على R بما يلي:       f(x)=x²+2x ;  x≤1\n' +
-            '     f(x)=a  sin⁡〖(x-1)〗/(x-1); x>1\n',
+            '     |f(x)=a  sin⁡(x-1)/(x-1); x>1\n',
         answers: [
             'a= 0',
             'a= 3',
@@ -187,9 +187,9 @@ export default [
         //15
         question: 'Soit f  la fonction définie  par\n' +
             ' f(x)=-x+2   pour  x<3\n' +
-            'f(x)=x-4   pour 3 ≤ x≤5\n' +
-            'f(x)=-2x+13   pour  x>5\n',
-        questionAR : 'لتكن f دالة معرفة بما يلي ',
+            '|f(x)=x-4   pour 3 ≤ x≤5\n' +
+            '|f(x)=-2x+13   pour  x>5\n',
+        questionAR : 'لتكن f دالة معرفة بما سبق ',
         answers: [
             'f continue seulement en 3 / متصلة فقط في 3',
             'f continue seulement en 5 / متصلة فقط في 5',
@@ -225,9 +225,9 @@ export default [
         //18
         question: 'la fonction f  définie sur [2 ; +∞[Par\n' +
             '        f(x)=  1/(x-1) ; si x >2\n' +
-            '        f(2)=1\n' +
+            '        |f(2)=1\n' +
             ' n’est pas continue en 2\n',
-        questionAR : 'الدالة f المعرفة على R بما يلي:   ',
+        questionAR : 'الدالة f المعرفة على R بما سبق:   ',
          answers: [
             'Vrai / صحيح',
             'Faux / خطأ',
@@ -251,7 +251,7 @@ export default [
     {
         //20
         question: 'Soit f une fonction numérique définie sur un intervalle ouvert I et a un élément de I . si f est continue en a , alors f est dérivable en a .',
-        questionAR : 'لتكن f دالة عددية معرفة على المجال المفتوح I و-a جزء ينتمي إلى I\n' +
+        questionAR : 'لتكن f دالة عددية معرفة على المجال المفتوح I وa جزء ينتمي إلى I\n' +
             ' اذا كانت f دالة متصلة في a، إذن f قابلة للإشتقاق في  a\n',
         answers: [
             'Vrai / صحيح',
@@ -263,13 +263,8 @@ export default [
     },
     {
         //21
-        question: 'Soit g la fonction définie sur ]- ∞;0]par\n' +
-            'لتكن g دالة معرفة على ]- ∞;0] بما يلي:\n' +
-            '       g (x)=√(x²-2x)/(x-3)\n' +
-            'soit (Cg) sa courbe représentative dans un repère du plan .\n' +
-            'ليكن Cg المنحنى التمثيلي ل g في معلم في المستوى\n' +
-            '(Cg) admet une asymptote d’équation y=x\n' +
-            'Cg يقبل  مقاربًا معادلته X=Y \n',
+        question: 'Soit g la fonction définie sur ]- ∞;0]par: g (x)=√(x²-2x)/(x-3) . Soit (Cg) sa courbe représentative dans un repère du plan . (Cg) admet une asymptote d’équation y=x',
+	questionAR : 'لتكن g دالة معرفة على ]- ∞;0] بما يلي: g (x)=√(x²-2x)/(x-3). ليكن Cg المنحنى التمثيلي ل g في أحد معالم المبيان .Cg يقبل خطًا مقاربًا للمعادلة y = x',
         answers: [
             'Vrai / صحيح',
             'Faux / خطأ',
@@ -340,7 +335,8 @@ export default [
     },
     {
         //27
-        question: 'ln (1-x) ≥1 est équivalent àيكافئ  )) ',
+        question: 'ln (1-x) ≥1 est équivalent à ',
+	questionAR: 'ln (1-x) ≥1 يكافئ  ',
          answers: [
             'x≤1-e',
             'x <0',
@@ -364,8 +360,8 @@ export default [
     {
         //29
         question: 'Soit (U n) la suite définie par \n' +
-            '∀ n ∈N* :\nU n  = 1 + 1/2 +……+ 1/n+ln⁡(n)   alors',
-            questionAR : 'لتكن المتتالية (U n) ∀ n ∈N  المعرفة بما يلي :U n  = 1 + 1/2 +……+ 1/n+ln⁡(n)   alors',
+            '∀ n ∈N* :\nU n  = 1 + 1/2 +……+ (1/n)+ln⁡(n)   alors',
+            questionAR : 'لتكن المتتالية (U n) ∀ n ∈N  المعرفة بما يلي :U n  = 1 + 1/2 +……+ (1/n)+ln⁡(n)   alors',
         answers: [
             '(U n) est positive et croissante  و تصاعدية  موجبة و',
             '(U n) est décroissante / تناقصية',
