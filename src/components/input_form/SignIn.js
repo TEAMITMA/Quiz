@@ -243,20 +243,20 @@ export default function SignIn() {
         // ]
 
         // emails.map( email => {
-        //     db.collection('users-quiz-2').add({ email: email.email, name: email.name })
+        //     db.collection('users-quiz-3').add({ email: email.email, name: email.name })
         //         .then(querySnapshot => {
         //
         //         })
         // })
 
-        db.collection('users-quiz-2').where("email", "==", email.toLowerCase())
+        db.collection('users-quiz-3').where("email", "==", email.toLowerCase())
             .get()
             .then(querySnapshot => {
                 const data = querySnapshot.docs.map(doc => doc.data());
                 if(data.length == 0){
                     setError("Vous ne faites pas partie du groupe autorisé à passer ce quiz.")
                 }else{
-                    db.collection('results-quiz-2').where("email", "==", email.toLowerCase())
+                    db.collection('results-quiz-3').where("email", "==", email.toLowerCase())
                         .get()
                         .then(snap => {
                             const data = snap.docs.map(doc => doc.data());

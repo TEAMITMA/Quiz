@@ -87,6 +87,18 @@ class Main extends Component {
     checkEquality() {
 
         let { count, total, score} = this.state;
+        if(count == 0 ){
+            localStorage.removeItem('results');
+        }
+        let results = localStorage.getItem("results");
+        results = JSON.parse(results)
+        if(results) {
+            if (count != results.length) {
+                localStorage.removeItem('results');
+                location.reload();
+            }
+        }
+
         if (count == total) {
             let name = localStorage.getItem("name");
             let email = localStorage.getItem("email");
@@ -106,7 +118,7 @@ class Main extends Component {
                     sc = sc+1
                 }
             })
-            db.collection('results-quiz-2')
+            db.collection('results-quiz-3')
                 .add({ createdAt: new Date(Date.now()),
                 name , email, results: results , numbers: `${sc}/${total}`, score:sc })
                 .then(querySnapshot => {
