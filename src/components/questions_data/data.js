@@ -137,7 +137,7 @@ export default [
             'la droite d’équation y= -3x  est asymptote à la courbe représentative de f, dans un repère du plan au voisinage +∞\n',
         questionAR : 'لتكن الدالة  f المعرفة على  R \n' +
             'f(x)=x+ √(|4x^2-1|)\n'+
-            'المستقيم الذي معادلته y= -3x مقارب لمنحنى الدالة f في معلم في المستوى'   ,
+            'المستقيم الذي معادلته y= -3x مقارب لمنحنى الدالة f في معلم في المستوى+∞ '   ,
         answers: [
             'Vrai / صحيح',
             'Faux / خطأ',
@@ -148,8 +148,8 @@ export default [
     },
     {
         //12
-        question: 'l^\' équation 〖(ln〗⁡〖x)²+2lnx-8=0 admet〗 deux solutions :',
-        questionAR : 'المعادلة 〖(ln〗⁡〖x)²+2lnx-8=0 〗تقبل حلين إثنين' ,
+        question: 'l^\' équation ln(x)²+2lnx-8=0 admet〗 deux solutions :',
+        questionAR : 'المعادلة ln(x)²+2lnx-8=0 تقبل حلين إثنين' ,
         answers: [
             '{e  ̄² ; e  ̄³}',
             '{e  ̄⁴ ; e²}',
@@ -160,8 +160,8 @@ export default [
     },
     {
         //13
-        question: 'l’écriture du nombre A= (∛(7²  )×∜(7³ )× √(⁵&7⁴ ))/((√(6&7^5)) ²)  sous forme d’une puissance rationnelle est :',
-        questionAR:'كتابة الرقم A= (∛(7²  )×∜(7³ )× √(⁵&7⁴ ))/((√(6&7^5)) ²)    \n' +
+        question: 'l’écriture du nombre A= (∛(7²)×∜(7³)× ⁵√(7⁴))/(⁶√(7^5)²)  sous forme d’une puissance rationnelle est :',
+        questionAR:'كتابة الرقم A= (∛(7²)×∜(7³)× ⁵√(7⁴))/(⁶√(7^5)²)     \n' +
             'على شكل قوة جذرية هو:\n',
         answers: [
             '7^(10/20)',
@@ -202,8 +202,8 @@ export default [
     },
     {
         //16
-        question: 'la fonction f : x→¬ | x²-16|',
-        questionAR : 'الدالة f : x→¬ | x²-16|',
+        question: 'la fonction f : x→| x²-16|',
+        questionAR : 'الدالة f : x→| x²-16|',
         answers: [
             'Est Continue sur (متصلة على) ]- ∞;-4] et [4;+∞[ ',
             'Est non continue en (غير متصلة في) 4' ,
@@ -227,8 +227,7 @@ export default [
         //18
         question: 'La dérivée de la fonction  f définie sur\n' +
             ' [0 ; +∞[ par : f(x)=6x^(2/(3 ))-4x est :\n',
-        questionAR : 'الدالة المشتقة ل f و المعرفة في  [0 ; +∞[\n' +
-            'بما يلي f(x)=6x^(2/(3 ))-4xهي\n',
+        questionAR : 'الدالة المشتقة ل f و المعرفة في  [0 ; +∞[بما يلي f(x)=6x^(2/(3 ))-4xهي',
         answers: [
             'f^\' (x)=4- ∛x',
             'f^\' (x)=2- ∛x',
@@ -281,7 +280,7 @@ export default [
     },
     {
         //22
-        question: 'lim┬(n→+∞)⁡〖(Sin n)/ln⁡〖(n+1)〗 〗 n’existe pas (غير موجود)',
+        question: 'lim┬(n→+∞)⁡〖(Sin n)/ln⁡(n+1)〗 n’existe pas (غير موجود)',
         answers: [
             'Vrai / صحيح',
             'Faux / خطأ',
