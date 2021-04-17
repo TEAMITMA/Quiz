@@ -123,6 +123,7 @@ class Main extends Component {
                 name , email, results: results , numbers: `${sc}/${total}`, score:sc })
                 .then(querySnapshot => {
                     localStorage.removeItem('name');
+                    localStorage.removeItem('quiz-4');
                     localStorage.removeItem('email');
                     localStorage.removeItem('results');
             });

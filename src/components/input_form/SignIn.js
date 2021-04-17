@@ -462,6 +462,7 @@ export default function SignIn() {
                                         }else{
                                             localStorage.setItem('name', user);
                                             localStorage.setItem('email', email.toLowerCase());
+                                            localStorage.setItem('quiz-4', "1");
                                             window.location.reload();
                                         }
                                     })

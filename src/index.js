@@ -18,11 +18,12 @@ class App extends React.Component {
     render() {
         let name = localStorage.getItem("name");
         let email = localStorage.getItem("email");
+        let quiz = localStorage.getItem("quiz-4");
         return (
         <div className="App">
             <Header/>
             {
-                (name && email)?
+                (name && email && quiz)?
                     <Main/>:
                     <Form/>
             }
