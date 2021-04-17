@@ -162,6 +162,195 @@ export default function SignIn() {
         //
         // ]
 
+        const emails = [ "n@N.n", "M@m.M", "k@K.k"]
+
+        // const emails = [
+        //     "Atanjiatnaji6@gmail.com",
+        //     "ahmedkitari50@gmail.com",
+        //     "ihssaneberquecha@gmail.com",
+        //     "mohamedlbhjaouy@gmail.com",
+        //     "Saidbarhoune12345@gmail.com",
+        //     "adamfennan954@gmail.com",
+        //     "Adamrochdi.studies@gmail.com",
+        //     "aedassamam.abidallah912@gmail.com",
+        //     "ait.nasser.2003@gmail.com",
+        //     "Aitounejjarsana017@gmail.com",
+        //     "Almalhaahmed@gmail.ma",
+        //     "amaoui.pro@gmail.com",
+        //     "Amine.m4a@icloud.com",
+        //     "aminenamousse@gmail.com",
+        //     "anascharafdine28@gmail.com",
+        //     "Anasriahi971@gmail.com",
+        //     "andazizsallame@gmail.com",
+        //     "angaryounes2002@gmail.com",
+        //     "arramaelyass@gmail.com",
+        //     "assiamachhour2@gmail.com",
+        //     "astrophds@gmail.com",
+        //     "ayajaafar1919@gmail.com",
+        //     "ayoub.hamza1067@gmail.com",
+        //     "ayoub222chater@gmail.com",
+        //     "ayoubsaidia21@gmail.com",
+        //     "ayuobaguilo145@gmail.com",
+        //     "azdinealaboudi@gmail.com",
+        //     "azizcherki762@gmail.com",
+        //     "bab.1503.med@gmail.com",
+        //     "bahaeeddineachaach@gmail.com",
+        //     "Bassouanas1@gmail.com",
+        //     "belgholanas@gmail.com",
+        //     "berkayouness456@gmail.com",
+        //     "mohammedelahmadi976@gmail.com",
+        //     "bikoamina40@gmail.com",
+        //     "bilalmalloul12@gmail.com",
+        //     "blilabdelilah1@gmail.com",
+        //     "bmo923763@gmail.com",
+        //     "boutiaya@gmail.com",
+        //     "c2h0a0y3b@gmail.com",
+        //     "chaimaahariri20030920@gmail.com",
+        //     "chaimaaradi2001@gmail.com",
+        //     "Chainedeprohacker@gmail.com",
+        //     "chalaeajana@gmail.com",
+        //     "chetibidoha@gmail.com",
+        //     "chkradobl@gmail.com",
+        //     "douaaidelarje@gmail.com",
+        //     "douaamaik43@gmail.com",
+        //     "douaeelhouiti@gmail.com",
+        //     "dynmohamed5@gmail.com",
+        //     "eddouimi@gmail.com",
+        //     "elaidi193@gmail.com",
+        //     "elamiriimane1@gmail.com",
+        //     "elamri983@gmail.com",
+        //     "elassaliamina1975@gmail.com",
+        //     "elbourkadimouhamed26@gmail.com",
+        //     "elbouzaidisawsan@gmail.com",
+        //     "elfarqileila@gmail.com",
+        //     "elghorssikhadija@gmail.com",
+        //     "elhamidi.ch@gmai.com",
+        //     "elmahrarrachida@gmail.com",
+        //     "ennadirchaime@gmail.com",
+        //     "ettaouils015@gmail.com",
+        //     "ezzahrafadyl@gmail.com",
+        //     "fatiaamou@gmail.com",
+        //     "Fatihamosnan2003@gmail.com",
+        //     "fatimanouha321@gmail.com",
+        //     "fatimazahrabougtob.2020@gmail.com",
+        //     "fbekri00@gmail.com",
+        //     "ganounefatimazahra228@gmail.com",
+        //     "gfdjvhf@gmail.com",
+        //     "h.jaafari2003@gmail.com",
+        //     "Hajar.labiad34@gmail.com",
+        //     "hajarbouh20@gmail.com",
+        //     "hajarelyoubi03@gmail.com",
+        //     "hakerchow@gmail.com",
+        //     "halima.jaad30@gmail.com",
+        //     "halimambirikat@gmail.com",
+        //     "hamzaelkaouii04@gmail.com",
+        //     "hamzaofficielle1@gmail.com",
+        //     "hasantamri2019@gmail.com",
+        //     "hasnaaessounaini4@gmail.com",
+        //     "hatim.nini2@gmail.com",
+        //     "hichamkhaled112@gmail.com",
+        //     "hirchisalma@gmail.com",
+        //     "hm3029826@gmail.com",
+        //     "houdachal88.18@gmail.com",
+        //     "houdaettaouil1234@gmail.com",
+        //     "houdamouhssine2003@gmail.com",
+        //     "hssissin68@gaiml.com",
+        //     "ibrahimaarabdotcom@gmail.com",
+        //     "ibrahimbalamy9@gmail.com",
+        //     "ibtissamekhalis03@gmail.com",
+        //     "iguiderhamza2@gmail.com",
+        //     "ihssaneberquecha@gmail.com",
+        //     "ikerayoub0@gmail.com",
+        //     "ilias.kourti@gmail.com",
+        //     "ilyas.chchlfi123@gmail.com",
+        //     "imad.bn111@gmail.com",
+        //     "imadhulk12@gmail.com",
+        //     "Irissaw6503@gmail.com",
+        //     "Jebbariamine33@gmail.com",
+        //     "jhablihasna@gmail.com",
+        //     "jhilalhassan98@gmail.com",
+        //     "Kaoutharelmachkouri2003@gmail.com",
+        //     "Kawtharaitelhousseine@gmail.com",
+        //     "kenzazahar17@gmail.com",
+        //     "lamiaesadiq@gmail.com",
+        //     "lasfaribrahim2003@gmail.com",
+        //     "lhcen95.bahmed@gmail.com",
+        //     "love.123nada.123@gmail.com",
+        //     "marocainsoufiane219@gmail.com",
+        //     "marwanekaraoui20@gmail.com",
+        //     "maryamsaidi1278@gmail.com",
+        //     "mastapha.dafa@gmail.com",
+        //     "medoxtoto@gmail.com",
+        //     "meryemeddehbi32@gmail.com",
+        //     "meryemjamel90@gmail.com",
+        //     "mimiloka532@gmail.com",
+        //     "mostafabelaaroussi345@gmail.com",
+        //     "mrabetnajwa24@gmail.com",
+        //     "naimaelgouid@gmail.com",
+        //     "namri505@gmail.com",
+        //     "narjisskaza@gmail.com",
+        //     "nazimarzougui@gmail.com",
+        //     "nzakaria026@gmail.com",
+        //     "olouazri@gmail.com",
+        //     "ouhmarwa@gmail.com",
+        //     "oulimea@gmail.com",
+        //     "oussamaelgazar@gmail.com",
+        //     "oussamamidiouri@gmail.com",
+        //     "oussamatrk28@gmail.com",
+        //     "outmank49@gmail.com",
+        //     "R130105078@GMAIL.COM",
+        //     "sadaayoub424@gmail.com",
+        //     "salmaghaddou@gmail.com",
+        //     "salmarouigua@gmail.com",
+        //     "saloua.binizi.01@gmail.com",
+        //     "sara123badihi@gmail.com",
+        //     "saraouatik1@gmail.com",
+        //     "soomin7h7@gmail.com",
+        //     "soufianfouad30022002@gmail.com",
+        //     "ssadiknabil413@gmail.com",
+        //     "tahourfadwa1@gmail.com",
+        //     "usatantan6@gmail.com",
+        //     "www.oussamakadraoui123@gmail.com",
+        //     "yakhrtou@gmail.com",
+        //     "younesouaddouh41@gmail.com",
+        //     "yy0497555@gmail.com",
+        //     "zouhir111111111@gmail.com",
+        //     "mouadn773@gmail.com",
+        //     "Soufyaneelgharnili@gmail.com",
+        //     "talsinohamed15@gmail.com",
+        //     "Noureddine66@gmail.com",
+        //     "abdo5.cabitano@gmail.com",
+        //     "Mohamedhmaoud@gmail.com",
+        //     "hakianas64@gmail.com",
+        //     "Mohamedamineaswab@gmail.com",
+        //     "ouahbi.said.ouahbi@gmail.com",
+        //     "benajjarreda@gmail.com",
+        //     "oumaimahargal2019@gmail.com",
+        //     "hasantamri2019@gmail.com",
+        //     "elmahdi.elghazi03@gmail.com",
+        //     "elhassani2003abdellah@gmail.com",
+        //     "foulanea@gmail.com",
+        //     "aloneidma@gmail.com",
+        //     "Wiameakhal2003@gmail.com",
+        //     "alahappy2@gmail.com",
+        //     "hamzakri2020@gmail.com",
+        //     "Ikrambendriss0@gmail.com",
+        //     "Manalmaazouzi83@gmail.com",
+        //     "nassimboucraa92@gmail.com",
+        //     "Otmanzirari99@gmail.com",
+        //     "ichourafik011@gmail.com",
+        //     "Mouhssinefargani@gmail.com",
+        //     "sayatazraibi@gmail.com",
+        //     "Taoufikdaoudi0@gmail.com",
+        //     "Tarik2004el@gmail.com",
+        //     "wissalessayouti@gmail.com",
+        //     "Youneshadad76@gmail.com",
+        //     "Yousseflamri0777@gmail.com",
+        //     "zc.zakariachoukri23@gmail.com",
+        //     "amirzaoula81@gmail.com",
+        //     "khalidbouzriba1@gmail.com",
+        // ]
+
 
         // const emails = [  "AGOUJIL104@gmail.com", "abdellatifboumalek@gmail.com", "abdou.ouahbi@yahoo.fr",
         //     "abdsamadlmzdah@gmail.com",
@@ -242,30 +431,44 @@ export default function SignIn() {
         //     "hajarsadok6@gmail.com",
         // ]
 
-        // emails.map( email => {
-        //     db.collection('users-quiz-3').add({ email: email.email, name: email.name })
-        //         .then(querySnapshot => {
-        //
-        //         })
-        // })
+        emails.map( email => {
+            db.collection('users-quiz-4').add({ email: email.toLowerCase() })
+                .then(querySnapshot => {
+                console.log("done")
+                })
+        })
 
-        db.collection('users-quiz-3').where("email", "==", email.toLowerCase())
+        db.collection('users-quiz-4').where("email", "==", email.toLowerCase())
             .get()
             .then(querySnapshot => {
                 const data = querySnapshot.docs.map(doc => doc.data());
                 if(data.length == 0){
                     setError("Vous ne faites pas partie du groupe autorisé à passer ce quiz.")
                 }else{
-                    db.collection('results-quiz-3').where("email", "==", email.toLowerCase())
+                    db.collection('results-quiz-4').where("email", "==", email.toLowerCase())
                         .get()
                         .then(snap => {
                             const data = snap.docs.map(doc => doc.data());
                             if(data.length != 0){
                                 setError("Vous avez déjà passé ce quiz.")
                             }else{
-                                localStorage.setItem('name', user);
-                                localStorage.setItem('email', email.toLowerCase());
-                                window.location.reload();
+
+                                db.collection('status').where("start", "==", false)
+                                    .get()
+                                    .then(snap => {
+                                        const data = snap.docs.map(doc => doc.data());
+                                        if(data.length != 0){
+                                            setError("En attente d’approbation de l’administrateur.")
+                                        }else{
+                                            localStorage.setItem('name', user);
+                                            localStorage.setItem('email', email.toLowerCase());
+                                            window.location.reload();
+                                        }
+                                    })
+
+                                // localStorage.setItem('name', user);
+                                // localStorage.setItem('email', email.toLowerCase());
+                                // window.location.reload();
                             }
                         })
 
