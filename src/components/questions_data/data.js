@@ -135,9 +135,8 @@ export default [
         question: ': On considère la fonction f définie sur R par \n'
             +'f(x)=x+ √(|4x^2-1|)\n' +
             'la droite d’équation y= -3x  est asymptote à la courbe représentative de f, dans un repère du plan au voisinage +∞\n',
-        questionAR : 'لتكن الدالة  f Rالمعرفة على  \n' +
-            'f(x)=x+ √(|4x^2-1|)\n'+
-            'المستقيم الذي معادلته y= -3x مقارب لمنحنى الدالة f في معلم في المستوى+∞ '   ,
+        questionAR : 'لتكن الدالة  fالمعرفة علىR بما يلي f(x)=x+ √(|4x^2-1|)\n' +
+            '.المستقيم الذي معادلته y= -3x مقارب لمنحنى الدالة f في معلم في المستوى+∞\n '   ,
         answers: [
             'Vrai / صحيح',
             'Faux / خطأ',
@@ -356,8 +355,9 @@ export default [
     {
         //28
         question: 'l’ensemble de définition de l’inéquation\n' +
-            '   (lnx)² -5x -3 > 0\n',
-        questionAR : 'مجموعة تعريف    (lnx)²-5x-3 > 0',
+            '(lnx)² -5x -3 > 0\n',
+        questionAR :'مجموعة تعريف\t'+
+            '\n\tlnx² -5x -3 > 0',
         answers: [
             'L’ensemble vide (مجموعة فارغة)',
             'R',
