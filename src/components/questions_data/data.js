@@ -135,7 +135,7 @@ export default [
         question: ': On considère la fonction f définie sur R par \n'
             +'f(x)=x+ √(|4x^2-1|)\n' +
             'la droite d’équation y= -3x  est asymptote à la courbe représentative de f, dans un repère du plan au voisinage +∞\n',
-        questionAR : 'لتكن الدالة  f المعرفة على  R \n' +
+        questionAR : 'لتكن الدالة  f Rالمعرفة على  \n' +
             'f(x)=x+ √(|4x^2-1|)\n'+
             'المستقيم الذي معادلته y= -3x مقارب لمنحنى الدالة f في معلم في المستوى+∞ '   ,
         answers: [
@@ -148,7 +148,7 @@ export default [
     },
     {
         //12
-        question: 'l^\' équation ln(x)²+2lnx-8=0 admet〗 deux solutions :',
+        question: 'l^\' équation ln(x)²+2lnx-8=0 admet deux solutions :',
         questionAR : 'المعادلة ln(x)²+2lnx-8=0 تقبل حلين إثنين' ,
         answers: [
             '{e  ̄² ; e  ̄³}',
@@ -357,7 +357,7 @@ export default [
         //28
         question: 'l’ensemble de définition de l’inéquation\n' +
             '   (lnx)² -5x -3 > 0\n',
-        questionAR : 'مجموعة تعريف    (lnx)² -5x -3 > 0',
+        questionAR : 'مجموعة تعريف    (lnx)²-5x-3 > 0',
         answers: [
             'L’ensemble vide (مجموعة فارغة)',
             'R',
