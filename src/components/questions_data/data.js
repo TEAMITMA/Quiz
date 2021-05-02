@@ -326,8 +326,8 @@ answers: [
     //26
     question: 'ln⁡(x-1)-ln⁡(3x+2)<0 \n' +
     'admet des solutions dans R\n',
-        questionAR : 'المتراجحة〖 ln〗⁡(x-1)-ln⁡(3x+2)<0     تقبل حلولا في R' +
-'R  \t\t     \n',
+        questionAR : 'ln⁡(x-1)-ln⁡(3x+2)<0 ' +
+' المتراجحة تقبل حلولا فيR ',
     answers: [
     'Vrai / صحيح',
     'Faux / خطأ',
