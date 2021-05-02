@@ -118,7 +118,7 @@ class Main extends Component {
                     sc = sc+1
                 }
             })
-            db.collection('results-quiz-4')
+            db.collection('results-quiz-5')
                 .add({ createdAt: new Date(Date.now()),
                 name , email, results: results , numbers: `${sc}/${total}`, score:sc })
                 .then(querySnapshot => {
