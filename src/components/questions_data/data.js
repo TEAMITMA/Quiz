@@ -64,7 +64,7 @@ export default [
         //5
         question: 'Soit (Un)  une suite numérique définie par : \n  ∀ n∈N :  Un=(n+(-1)^n(√n))/(2n+3)\n' +
             'Alors :\n',
-        questionAR : 'متتالية معرفة كالتالي  (Un) لتكن   \n' +
+        questionAR : ' لتكن (Un) متتالية معرفة كالتالي\n' +
             ' ∀ n∈N :  Un=(n+(-1)^n(√n))/(2n+3)\n',
         answers: [
             'Si (Un) est divergente ( متباعدة) ',
@@ -302,9 +302,8 @@ export default [
         //24
         question: 'Soit f la fonction définie par f(x) =x√(x²+1)\n' +
             'F admet une fonction réciproque f^(-1) sur sur R\n',
-        questionAR : 'f   الدالة معرفة بما يلي'+
-        +'f(x) =x√(x²+1)'+
-'تقبل دالة عكسيةf(-1) ',
+        questionAR : ': معرفة بما يلي الدالة f    \n' +
+            'f^(-1)  دالة عكسية تقبل\n ',
 answers:[
     'Vrai / صحيح',
     'Faux / خطأ',
@@ -317,9 +316,9 @@ answers:[
     //25
     question: 'Soit f la fonction définie par \n  f(x) =-1/2+1/4 x+√(x+2)\n' +
     'f est croissante sur [-2 ;+∞[\n',
-        questionAR : 'معرفة بما يلي الدالة f    \nf   دالة معرفة بما يلي'+
-    'f(x) =-1/2+1/4 x+√(x+2)'+
-    'وتزايدية على [-2 ;+∞[',
+        questionAR : 'f   دالة معرفة بما يلي \nf(x) =-1/2+1/4 x+√(x+2)' +
+            '\n' +
+            'وتزايدية على [-2 ;+∞[\n',
     answers: [
     'Vrai / صحيح',
     'Faux / خطأ',
