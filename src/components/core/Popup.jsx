@@ -36,7 +36,7 @@ class Popup extends Component {
             saveAs(dataURI, "./test.txt");
             // this.savedData("datadashfdaskjfjkdgv","this")
             localStorage.removeItem('name');
-            localStorage.removeItem('quiz-4');
+            localStorage.removeItem('quiz-6');
             localStorage.removeItem('email');
             localStorage.removeItem('results');
             //alert("FINISHED QUIZ");

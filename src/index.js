@@ -18,7 +18,7 @@ class App extends React.Component {
     render() {
         let name = localStorage.getItem("name");
         let email = localStorage.getItem("email");
-        let quiz = localStorage.getItem("quiz-4");
+        let quiz = localStorage.getItem("quiz-6");
         return (
         <div className="App">
             <Header/>

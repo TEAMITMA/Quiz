@@ -118,12 +118,12 @@ class Main extends Component {
                     sc = sc+1
                 }
             })
-            db.collection('results-quiz-5')
+            db.collection('results-quiz-6')
                 .add({ createdAt: new Date(Date.now()),
                 name , email, results: results , numbers: `${sc}/${total}`, score:sc })
                 .then(querySnapshot => {
                     localStorage.removeItem('name');
-                    localStorage.removeItem('quiz-4');
+                    localStorage.removeItem('quiz-6');
                     localStorage.removeItem('email');
                     localStorage.removeItem('results');
             });
