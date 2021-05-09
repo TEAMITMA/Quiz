@@ -49,6 +49,19 @@ export default function SignIn() {
     const GoToPage = (values) => {
         values.preventDefault();
 
+        const emails = [
+       "mahmidostube@gmail.com",
+       "abdennourhaddoudi@gmail.com",
+       "aminesalhie1234@gmail.com",
+       "ayoubsaidia21@gmail.com",
+       "imadhulk12@gmail.com",
+       "i.freedomheart111@gmail.com",
+       "talsinohamed15@gmail.com",
+       "ayoubakhraz57@gmail.com",
+       "abdeldakirallah@gmail.com",
+       "mohamedlwah2020@gmail.com",
+]
+
         // emails.map( email => {
         //     db.collection('users-quiz-6').add({ email: email.toLowerCase() })
         //         .then(querySnapshot => {
